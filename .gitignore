@@ -1,0 +1,75 @@
+# ==============================================================================
+# Gitignore for VHDL & Xilinx Vivado Projects
+# ==============================================================================
+
+# Vivado generated directories
+.Xil/
+**/.Xil/
+*.cache/
+**/.cache/
+*.hw/
+**/*.hw/
+*.ip_user_files/
+**/*.ip_user_files/
+*.runs/
+**/*.runs/
+*.sim/
+**/*.sim/
+
+# Vivado generated temporary and log files
+*.jou
+*.log
+*.str
+*.wdb
+*.vcd
+*.wcfg.bak
+*.backup.log
+*.backup.jou
+*.dmp
+hs_err_pid*.log
+vivado_*.str
+vivado_*.jou
+vivado_*.log
+
+# Bitstreams and hardware programming files / Design checkpoints
+*.bit
+*.bin
+*.ltx
+*.mcs
+*.prm
+*.fs
+*.bgn
+*.drc
+*.dcp
+
+# Vivado HLS / temporary folders
+.ipcache/
+**/.ipcache/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Archives and large media videos
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.mp4
+*.mkv
+*.avi
+*.mov
+
+# Word documents
+*.docx
+
+# Materials kept locally outside repository
+teoria/
+apunts/
