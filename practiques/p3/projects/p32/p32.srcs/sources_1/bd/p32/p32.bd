@@ -1,0 +1,164 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x57AC8D23996A7FB9",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../p32.gen/sources_1/bd/p32",
+      "name": "p32",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "seg7_coder_0": "",
+      "bin2bcd_0": "",
+      "clk_divider_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "p32_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "bin_in": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "cat": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "seg7_coder_0": {
+        "vlnv": "xilinx.com:user:seg7_coder:1.0",
+        "xci_name": "p32_seg7_coder_0_0",
+        "xci_path": "ip\\p32_seg7_coder_0_0\\p32_seg7_coder_0_0.xci",
+        "inst_hier_path": "seg7_coder_0"
+      },
+      "bin2bcd_0": {
+        "vlnv": "xilinx.com:user:bin2bcd:1.0",
+        "xci_name": "p32_bin2bcd_0_0",
+        "xci_path": "ip\\p32_bin2bcd_0_0\\p32_bin2bcd_0_0.xci",
+        "inst_hier_path": "bin2bcd_0"
+      },
+      "clk_divider_0": {
+        "vlnv": "xilinx.com:user:clk_divider:1.0",
+        "xci_name": "p32_clk_divider_0_0",
+        "xci_path": "ip\\p32_clk_divider_0_0\\p32_clk_divider_0_0.xci",
+        "inst_hier_path": "clk_divider_0"
+      }
+    },
+    "nets": {
+      "bin2bcd_0_bcd0": {
+        "ports": [
+          "bin2bcd_0/bcd0",
+          "seg7_coder_0/char0"
+        ]
+      },
+      "bin2bcd_0_bcd1": {
+        "ports": [
+          "bin2bcd_0/bcd1",
+          "seg7_coder_0/char1"
+        ]
+      },
+      "bin2bcd_0_bcd2": {
+        "ports": [
+          "bin2bcd_0/bcd2",
+          "seg7_coder_0/char2"
+        ]
+      },
+      "bin2bcd_0_bcd3": {
+        "ports": [
+          "bin2bcd_0/bcd3",
+          "seg7_coder_0/char3"
+        ]
+      },
+      "bin_in_1": {
+        "ports": [
+          "bin_in",
+          "bin2bcd_0/bin_in"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "bin2bcd_0/clk",
+          "clk_divider_0/clk",
+          "seg7_coder_0/clk"
+        ]
+      },
+      "clk_divider_0_clk_div": {
+        "ports": [
+          "clk_divider_0/clk_div",
+          "seg7_coder_0/clk_div"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "bin2bcd_0/reset",
+          "clk_divider_0/reset",
+          "seg7_coder_0/reset"
+        ]
+      },
+      "seg7_coder_0_an": {
+        "ports": [
+          "seg7_coder_0/an",
+          "an"
+        ]
+      },
+      "seg7_coder_0_cat": {
+        "ports": [
+          "seg7_coder_0/cat",
+          "cat"
+        ]
+      }
+    }
+  }
+}

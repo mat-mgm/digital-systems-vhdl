@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="calc_comp_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="calc_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="13.050001 us"></ZoomEndTime>
+      <Cursor1Time time="2.250000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="157"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/calc_comp/B" type="array">
+      <obj_property name="ElementShortName">B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/A" type="array">
+      <obj_property name="ElementShortName">A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/s" type="logic">
+      <obj_property name="ElementShortName">s</obj_property>
+      <obj_property name="ObjectShortName">s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/r" type="logic">
+      <obj_property name="ElementShortName">r</obj_property>
+      <obj_property name="ObjectShortName">r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/m" type="logic">
+      <obj_property name="ElementShortName">m</obj_property>
+      <obj_property name="ObjectShortName">m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/d" type="logic">
+      <obj_property name="ElementShortName">d</obj_property>
+      <obj_property name="ObjectShortName">d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/cat" type="array">
+      <obj_property name="ElementShortName">cat[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cat[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/an" type="array">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/bin_in" type="array">
+      <obj_property name="ElementShortName">bin_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bin_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/bcdo" type="array">
+      <obj_property name="ElementShortName">bcdo[19:0]</obj_property>
+      <obj_property name="ObjectShortName">bcdo[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/clk_div" type="logic">
+      <obj_property name="ElementShortName">clk_div</obj_property>
+      <obj_property name="ObjectShortName">clk_div</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/d0" type="array">
+      <obj_property name="ElementShortName">d0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/d1" type="array">
+      <obj_property name="ElementShortName">d1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/d2" type="array">
+      <obj_property name="ElementShortName">d2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calc_comp/d3" type="array">
+      <obj_property name="ElementShortName">d3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d3[3:0]</obj_property>
+   </wvobject>
+</wave_config>

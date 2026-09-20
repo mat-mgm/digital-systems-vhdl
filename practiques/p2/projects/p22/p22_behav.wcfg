@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="p22_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="p22" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,278.609 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,290.030 ns"></ZoomEndTime>
+      <Cursor1Time time="1,278.149 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="190"></NameColumnWidth>
+      <ValueColumnWidth column_width="86"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/p22/sw" type="array">
+      <obj_property name="ElementShortName">sw[12:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[12:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p22/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p22/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p22/cat" type="array">
+      <obj_property name="ElementShortName">cat[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cat[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p22/an" type="array">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p22/div_clk" type="logic">
+      <obj_property name="ElementShortName">div_clk</obj_property>
+      <obj_property name="ObjectShortName">div_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p22/div_cnt" type="other">
+      <obj_property name="ElementShortName">div_cnt</obj_property>
+      <obj_property name="ObjectShortName">div_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p22/digit_act" type="other">
+      <obj_property name="ElementShortName">digit_act</obj_property>
+      <obj_property name="ObjectShortName">digit_act</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p22/sg" type="array">
+      <obj_property name="ElementShortName">sg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/p22/bcdo" type="array">
+      <obj_property name="ElementShortName">bcdo[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bcdo[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

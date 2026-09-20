@@ -1,0 +1,297 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xADB3F71E51A73D5E",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../chrono_ip.gen/sources_1/bd/chronoip",
+      "name": "chronoip",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_divider_0": "",
+      "div_temp_1_0": "",
+      "div_temps2_0": "",
+      "div_temp_3_0": "",
+      "div_temp_4_0": "",
+      "div_temp_5_0": "",
+      "div_temp_6_0": "",
+      "seg7_coder_0": "",
+      "startstop_0": "",
+      "lap_0": "",
+      "visual_0": ""
+    },
+    "ports": {
+      "reset": {
+        "direction": "I"
+      },
+      "clk": {
+        "direction": "I"
+      },
+      "mssc": {
+        "direction": "I"
+      },
+      "an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "cat": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "stst": {
+        "direction": "I"
+      },
+      "btnr": {
+        "direction": "I"
+      },
+      "lapbtn": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "clk_divider_0": {
+        "vlnv": "xilinx.com:user:clk_divider:1.0",
+        "xci_name": "chronoip_clk_divider_0_0",
+        "xci_path": "ip\\chronoip_clk_divider_0_0\\chronoip_clk_divider_0_0.xci",
+        "inst_hier_path": "clk_divider_0"
+      },
+      "div_temp_1_0": {
+        "vlnv": "xilinx.com:user:div_temp_1:1.0",
+        "xci_name": "chronoip_div_temp_1_0_0",
+        "xci_path": "ip\\chronoip_div_temp_1_0_0\\chronoip_div_temp_1_0_0.xci",
+        "inst_hier_path": "div_temp_1_0"
+      },
+      "div_temps2_0": {
+        "vlnv": "xilinx.com:user:div_temps2:1.0",
+        "xci_name": "chronoip_div_temps2_0_0",
+        "xci_path": "ip\\chronoip_div_temps2_0_0\\chronoip_div_temps2_0_0.xci",
+        "inst_hier_path": "div_temps2_0"
+      },
+      "div_temp_3_0": {
+        "vlnv": "xilinx.com:user:div_temp_3:1.0",
+        "xci_name": "chronoip_div_temp_3_0_0",
+        "xci_path": "ip\\chronoip_div_temp_3_0_0\\chronoip_div_temp_3_0_0.xci",
+        "inst_hier_path": "div_temp_3_0"
+      },
+      "div_temp_4_0": {
+        "vlnv": "xilinx.com:user:div_temp_4:1.0",
+        "xci_name": "chronoip_div_temp_4_0_0",
+        "xci_path": "ip\\chronoip_div_temp_4_0_0\\chronoip_div_temp_4_0_0.xci",
+        "inst_hier_path": "div_temp_4_0"
+      },
+      "div_temp_5_0": {
+        "vlnv": "xilinx.com:user:div_temp_5:1.0",
+        "xci_name": "chronoip_div_temp_5_0_0",
+        "xci_path": "ip\\chronoip_div_temp_5_0_0\\chronoip_div_temp_5_0_0.xci",
+        "inst_hier_path": "div_temp_5_0"
+      },
+      "div_temp_6_0": {
+        "vlnv": "xilinx.com:user:div_temp_6:1.0",
+        "xci_name": "chronoip_div_temp_6_0_0",
+        "xci_path": "ip\\chronoip_div_temp_6_0_0\\chronoip_div_temp_6_0_0.xci",
+        "inst_hier_path": "div_temp_6_0"
+      },
+      "seg7_coder_0": {
+        "vlnv": "xilinx.com:user:seg7_coder:1.0",
+        "xci_name": "chronoip_seg7_coder_0_0",
+        "xci_path": "ip\\chronoip_seg7_coder_0_0\\chronoip_seg7_coder_0_0.xci",
+        "inst_hier_path": "seg7_coder_0"
+      },
+      "startstop_0": {
+        "vlnv": "xilinx.com:user:startstop:1.0",
+        "xci_name": "chronoip_startstop_0_0",
+        "xci_path": "ip\\chronoip_startstop_0_0\\chronoip_startstop_0_0.xci",
+        "inst_hier_path": "startstop_0"
+      },
+      "lap_0": {
+        "vlnv": "xilinx.com:user:lap:1.0",
+        "xci_name": "chronoip_lap_0_0",
+        "xci_path": "ip\\chronoip_lap_0_0\\chronoip_lap_0_0.xci",
+        "inst_hier_path": "lap_0"
+      },
+      "visual_0": {
+        "vlnv": "xilinx.com:user:visual:1.0",
+        "xci_name": "chronoip_visual_0_0",
+        "xci_path": "ip\\chronoip_visual_0_0\\chronoip_visual_0_0.xci",
+        "inst_hier_path": "visual_0"
+      }
+    },
+    "nets": {
+      "btnr_1": {
+        "ports": [
+          "btnr",
+          "visual_0/btnr"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "clk_divider_0/clk",
+          "seg7_coder_0/clk",
+          "startstop_0/clk",
+          "lap_0/clk",
+          "visual_0/clk"
+        ]
+      },
+      "clk_divider_0_clk_div": {
+        "ports": [
+          "clk_divider_0/clk_div",
+          "div_temp_1_0/Clck_E",
+          "seg7_coder_0/clk_div"
+        ]
+      },
+      "div_temp_1_0_compt": {
+        "ports": [
+          "div_temp_1_0/compt",
+          "visual_0/centiseg"
+        ]
+      },
+      "div_temp_1_0_thick": {
+        "ports": [
+          "div_temp_1_0/thick",
+          "div_temps2_0/Clck_E"
+        ]
+      },
+      "div_temp_3_0_compt": {
+        "ports": [
+          "div_temp_3_0/compt",
+          "visual_0/seg"
+        ]
+      },
+      "div_temp_3_0_thick": {
+        "ports": [
+          "div_temp_3_0/thick",
+          "div_temp_4_0/Clck_E"
+        ]
+      },
+      "div_temp_4_0_compt": {
+        "ports": [
+          "div_temp_4_0/compt",
+          "visual_0/decaseg"
+        ]
+      },
+      "div_temp_4_0_thick": {
+        "ports": [
+          "div_temp_4_0/thick",
+          "div_temp_5_0/Clck_E"
+        ]
+      },
+      "div_temp_5_0_compt": {
+        "ports": [
+          "div_temp_5_0/compt",
+          "visual_0/min"
+        ]
+      },
+      "div_temp_5_0_thick": {
+        "ports": [
+          "div_temp_5_0/thick",
+          "div_temp_6_0/Clck_E"
+        ]
+      },
+      "div_temp_6_0_compt": {
+        "ports": [
+          "div_temp_6_0/compt",
+          "visual_0/decamin"
+        ]
+      },
+      "div_temps2_0_compt": {
+        "ports": [
+          "div_temps2_0/compt",
+          "visual_0/deciseg"
+        ]
+      },
+      "div_temps2_0_thick": {
+        "ports": [
+          "div_temps2_0/thick",
+          "div_temp_3_0/Clck_E"
+        ]
+      },
+      "lap_0_lap_on": {
+        "ports": [
+          "lap_0/lap_on",
+          "visual_0/lap"
+        ]
+      },
+      "lapbtn_1": {
+        "ports": [
+          "lapbtn",
+          "lap_0/lapbt"
+        ]
+      },
+      "mssc_1": {
+        "ports": [
+          "mssc",
+          "visual_0/mssc"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "seg7_coder_0/reset",
+          "div_temp_1_0/reset",
+          "clk_divider_0/reset",
+          "div_temp_3_0/reset",
+          "div_temp_4_0/reset",
+          "div_temp_5_0/reset",
+          "div_temp_6_0/reset",
+          "div_temps2_0/reset",
+          "startstop_0/reset",
+          "visual_0/reset"
+        ]
+      },
+      "seg7_coder_0_an": {
+        "ports": [
+          "seg7_coder_0/an",
+          "an"
+        ]
+      },
+      "seg7_coder_0_cat": {
+        "ports": [
+          "seg7_coder_0/cat",
+          "cat"
+        ]
+      },
+      "startstop_0_crono_on": {
+        "ports": [
+          "startstop_0/crono_on",
+          "visual_0/st"
+        ]
+      },
+      "stst_1": {
+        "ports": [
+          "stst",
+          "startstop_0/stst"
+        ]
+      },
+      "visual_0_disp0": {
+        "ports": [
+          "visual_0/disp0",
+          "seg7_coder_0/char0"
+        ]
+      },
+      "visual_0_disp1": {
+        "ports": [
+          "visual_0/disp1",
+          "seg7_coder_0/char1"
+        ]
+      },
+      "visual_0_disp2": {
+        "ports": [
+          "visual_0/disp2",
+          "seg7_coder_0/char2"
+        ]
+      },
+      "visual_0_disp3": {
+        "ports": [
+          "visual_0/disp3",
+          "seg7_coder_0/char3"
+        ]
+      }
+    }
+  }
+}

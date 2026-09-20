@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov 30 23:45:10 2022" VIVADOVERSION="2022.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="chronoip" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="reset" SIGIS="undef" SIGNAME="External_Ports_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="seg7_coder_0" PORT="reset"/>
+        <CONNECTION INSTANCE="div_temp_1_0" PORT="reset"/>
+        <CONNECTION INSTANCE="clk_divider_0" PORT="reset"/>
+        <CONNECTION INSTANCE="div_temp_3_0" PORT="reset"/>
+        <CONNECTION INSTANCE="div_temp_4_0" PORT="reset"/>
+        <CONNECTION INSTANCE="div_temp_5_0" PORT="reset"/>
+        <CONNECTION INSTANCE="div_temp_6_0" PORT="reset"/>
+        <CONNECTION INSTANCE="div_temps2_0" PORT="reset"/>
+        <CONNECTION INSTANCE="startstop_0" PORT="reset"/>
+        <CONNECTION INSTANCE="visual_0" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_divider_0" PORT="clk"/>
+        <CONNECTION INSTANCE="seg7_coder_0" PORT="clk"/>
+        <CONNECTION INSTANCE="startstop_0" PORT="clk"/>
+        <CONNECTION INSTANCE="lap_0" PORT="clk"/>
+        <CONNECTION INSTANCE="visual_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mssc" SIGIS="undef" SIGNAME="External_Ports_mssc">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="visual_0" PORT="mssc"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="an" RIGHT="0" SIGIS="undef" SIGNAME="seg7_coder_0_an">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="seg7_coder_0" PORT="an"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="cat" RIGHT="0" SIGIS="undef" SIGNAME="seg7_coder_0_cat">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="seg7_coder_0" PORT="cat"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="stst" SIGIS="undef" SIGNAME="External_Ports_stst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="startstop_0" PORT="stst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btnr" SIGIS="undef" SIGNAME="External_Ports_btnr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="visual_0" PORT="btnr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="lapbtn" SIGIS="undef" SIGNAME="External_Ports_lapbtn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="lap_0" PORT="lapbt"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/clk_divider_0" HWVERSION="1.0" INSTANCE="clk_divider_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_divider" VLNV="xilinx.com:user:clk_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="eoc" VALUE="1000000"/>
+        <PARAMETER NAME="Component_Name" VALUE="chronoip_clk_divider_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_div" SIGIS="undef" SIGNAME="clk_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_1_0" PORT="Clck_E"/>
+            <CONNECTION INSTANCE="seg7_coder_0" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/div_temp_1_0" HWVERSION="1.0" INSTANCE="div_temp_1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="div_temp_1" VLNV="xilinx.com:user:div_temp_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="n" VALUE="10"/>
+        <PARAMETER NAME="Component_Name" VALUE="chronoip_div_temp_1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Clck_E" SIGIS="undef" SIGNAME="clk_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_divider_0" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="compt" RIGHT="0" SIGIS="undef" SIGNAME="div_temp_1_0_compt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="visual_0" PORT="centiseg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="thick" SIGIS="undef" SIGNAME="div_temp_1_0_thick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temps2_0" PORT="Clck_E"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/div_temp_3_0" HWVERSION="1.0" INSTANCE="div_temp_3_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="div_temp_3" VLNV="xilinx.com:user:div_temp_3:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="n" VALUE="10"/>
+        <PARAMETER NAME="Component_Name" VALUE="chronoip_div_temp_3_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Clck_E" SIGIS="undef" SIGNAME="div_temps2_0_thick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temps2_0" PORT="thick"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="compt" RIGHT="0" SIGIS="undef" SIGNAME="div_temp_3_0_compt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="visual_0" PORT="seg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="thick" SIGIS="undef" SIGNAME="div_temp_3_0_thick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_4_0" PORT="Clck_E"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/div_temp_4_0" HWVERSION="1.0" INSTANCE="div_temp_4_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="div_temp_4" VLNV="xilinx.com:user:div_temp_4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="n" VALUE="10"/>
+        <PARAMETER NAME="Component_Name" VALUE="chronoip_div_temp_4_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Clck_E" SIGIS="undef" SIGNAME="div_temp_3_0_thick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_3_0" PORT="thick"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="compt" RIGHT="0" SIGIS="undef" SIGNAME="div_temp_4_0_compt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="visual_0" PORT="decaseg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="thick" SIGIS="undef" SIGNAME="div_temp_4_0_thick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_5_0" PORT="Clck_E"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/div_temp_5_0" HWVERSION="1.0" INSTANCE="div_temp_5_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="div_temp_5" VLNV="xilinx.com:user:div_temp_5:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="n" VALUE="6"/>
+        <PARAMETER NAME="Component_Name" VALUE="chronoip_div_temp_5_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Clck_E" SIGIS="undef" SIGNAME="div_temp_4_0_thick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_4_0" PORT="thick"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="compt" RIGHT="0" SIGIS="undef" SIGNAME="div_temp_5_0_compt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="visual_0" PORT="min"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="thick" SIGIS="undef" SIGNAME="div_temp_5_0_thick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_6_0" PORT="Clck_E"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/div_temp_6_0" HWVERSION="1.0" INSTANCE="div_temp_6_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="div_temp_6" VLNV="xilinx.com:user:div_temp_6:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="n" VALUE="10"/>
+        <PARAMETER NAME="Component_Name" VALUE="chronoip_div_temp_6_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Clck_E" SIGIS="undef" SIGNAME="div_temp_5_0_thick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_5_0" PORT="thick"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="compt" RIGHT="0" SIGIS="undef" SIGNAME="div_temp_6_0_compt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="visual_0" PORT="decamin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="thick" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/div_temps2_0" HWVERSION="1.0" INSTANCE="div_temps2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="div_temps2" VLNV="xilinx.com:user:div_temps2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="n" VALUE="10"/>
+        <PARAMETER NAME="Component_Name" VALUE="chronoip_div_temps2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Clck_E" SIGIS="undef" SIGNAME="div_temp_1_0_thick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_1_0" PORT="thick"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="compt" RIGHT="0" SIGIS="undef" SIGNAME="div_temps2_0_compt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="visual_0" PORT="deciseg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="thick" SIGIS="undef" SIGNAME="div_temps2_0_thick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_3_0" PORT="Clck_E"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/lap_0" HWVERSION="1.0" INSTANCE="lap_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="lap" VLNV="xilinx.com:user:lap:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="chronoip_lap_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="lapbt" SIGIS="undef" SIGNAME="External_Ports_lapbtn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="lapbtn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="lap_on" SIGIS="undef" SIGNAME="lap_0_lap_on">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="visual_0" PORT="lap"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/seg7_coder_0" HWVERSION="1.0" INSTANCE="seg7_coder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="seg7_coder" VLNV="xilinx.com:user:seg7_coder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="chronoip_seg7_coder_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="char0" RIGHT="0" SIGIS="undef" SIGNAME="visual_0_disp0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="visual_0" PORT="disp0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="char1" RIGHT="0" SIGIS="undef" SIGNAME="visual_0_disp1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="visual_0" PORT="disp1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="char2" RIGHT="0" SIGIS="undef" SIGNAME="visual_0_disp2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="visual_0" PORT="disp2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="char3" RIGHT="0" SIGIS="undef" SIGNAME="visual_0_disp3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="visual_0" PORT="disp3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_div" SIGIS="undef" SIGNAME="clk_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_divider_0" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="cat" RIGHT="0" SIGIS="undef" SIGNAME="seg7_coder_0_cat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="an" RIGHT="0" SIGIS="undef" SIGNAME="seg7_coder_0_an">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="an"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/startstop_0" HWVERSION="1.0" INSTANCE="startstop_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="startstop" VLNV="xilinx.com:user:startstop:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="chronoip_startstop_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="stst" SIGIS="undef" SIGNAME="External_Ports_stst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="stst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="crono_on" SIGIS="undef" SIGNAME="startstop_0_crono_on">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="visual_0" PORT="st"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/visual_0" HWVERSION="1.0" INSTANCE="visual_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="visual" VLNV="xilinx.com:user:visual:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="chronoip_visual_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="btnr" SIGIS="undef" SIGNAME="External_Ports_btnr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btnr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mssc" SIGIS="undef" SIGNAME="External_Ports_mssc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mssc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="st" SIGIS="undef" SIGNAME="startstop_0_crono_on">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="startstop_0" PORT="crono_on"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="lap" SIGIS="undef" SIGNAME="lap_0_lap_on">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lap_0" PORT="lap_on"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="centiseg" RIGHT="0" SIGIS="undef" SIGNAME="div_temp_1_0_compt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_1_0" PORT="compt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="deciseg" RIGHT="0" SIGIS="undef" SIGNAME="div_temps2_0_compt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temps2_0" PORT="compt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="seg" RIGHT="0" SIGIS="undef" SIGNAME="div_temp_3_0_compt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_3_0" PORT="compt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="decaseg" RIGHT="0" SIGIS="undef" SIGNAME="div_temp_4_0_compt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_4_0" PORT="compt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="min" RIGHT="0" SIGIS="undef" SIGNAME="div_temp_5_0_compt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_5_0" PORT="compt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="decamin" RIGHT="0" SIGIS="undef" SIGNAME="div_temp_6_0_compt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div_temp_6_0" PORT="compt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="disp0" RIGHT="0" SIGIS="undef" SIGNAME="visual_0_disp0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="seg7_coder_0" PORT="char0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="disp1" RIGHT="0" SIGIS="undef" SIGNAME="visual_0_disp1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="seg7_coder_0" PORT="char1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="disp2" RIGHT="0" SIGIS="undef" SIGNAME="visual_0_disp2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="seg7_coder_0" PORT="char2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="disp3" RIGHT="0" SIGIS="undef" SIGNAME="visual_0_disp3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="seg7_coder_0" PORT="char3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="crono_enable" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

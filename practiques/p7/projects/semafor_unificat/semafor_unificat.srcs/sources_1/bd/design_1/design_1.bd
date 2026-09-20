@@ -1,0 +1,202 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1B304557E78F1D84",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../semafor_unificat.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_div_0": "",
+      "clk_div_1s_0": "",
+      "semafor_0": "",
+      "trafic_light_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "p": {
+        "direction": "I"
+      },
+      "cat": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "clk_div_0": {
+        "vlnv": "xilinx.com:user:clk_div:1.0",
+        "xci_name": "design_1_clk_div_0_0",
+        "xci_path": "ip\\design_1_clk_div_0_0\\design_1_clk_div_0_0.xci",
+        "inst_hier_path": "clk_div_0"
+      },
+      "clk_div_1s_0": {
+        "vlnv": "xilinx.com:user:clk_div_1s:1.0",
+        "xci_name": "design_1_clk_div_1s_0_0",
+        "xci_path": "ip\\design_1_clk_div_1s_0_0\\design_1_clk_div_1s_0_0.xci",
+        "inst_hier_path": "clk_div_1s_0"
+      },
+      "semafor_0": {
+        "vlnv": "xilinx.com:user:semafor:1.0",
+        "xci_name": "design_1_semafor_0_0",
+        "xci_path": "ip\\design_1_semafor_0_0\\design_1_semafor_0_0.xci",
+        "inst_hier_path": "semafor_0"
+      },
+      "trafic_light_0": {
+        "vlnv": "xilinx.com:user:trafic_light:1.0",
+        "xci_name": "design_1_trafic_light_0_0",
+        "xci_path": "ip\\design_1_trafic_light_0_0\\design_1_trafic_light_0_0.xci",
+        "inst_hier_path": "trafic_light_0"
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "clk",
+          "clk_div_0/clk",
+          "clk_div_1s_0/clk",
+          "semafor_0/clk",
+          "trafic_light_0/clk"
+        ]
+      },
+      "clk_div_0_clk_div": {
+        "ports": [
+          "clk_div_0/clk_div_base",
+          "trafic_light_0/div_clk"
+        ]
+      },
+      "clk_div_1s_0_clk_div": {
+        "ports": [
+          "clk_div_1s_0/clk_div_sec",
+          "semafor_0/div_clk_tm",
+          "trafic_light_0/div_clk1"
+        ]
+      },
+      "p_1": {
+        "ports": [
+          "p",
+          "semafor_0/p"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "clk_div_0/reset",
+          "clk_div_1s_0/reset",
+          "semafor_0/reset",
+          "trafic_light_0/reset"
+        ]
+      },
+      "semafor_0_ambar_c": {
+        "ports": [
+          "semafor_0/ambar_c",
+          "trafic_light_0/ambar_c"
+        ]
+      },
+      "semafor_0_conta": {
+        "ports": [
+          "semafor_0/conta",
+          "trafic_light_0/counter"
+        ]
+      },
+      "semafor_0_enable_out": {
+        "ports": [
+          "semafor_0/enable_out",
+          "trafic_light_0/enable"
+        ]
+      },
+      "semafor_0_enable_out_b": {
+        "ports": [
+          "semafor_0/enable_out_b",
+          "trafic_light_0/enable_b"
+        ]
+      },
+      "semafor_0_verd_c": {
+        "ports": [
+          "semafor_0/verd_c",
+          "trafic_light_0/green_c"
+        ]
+      },
+      "semafor_0_verd_v": {
+        "ports": [
+          "semafor_0/verd_v",
+          "trafic_light_0/green_v"
+        ]
+      },
+      "semafor_0_vermell_c": {
+        "ports": [
+          "semafor_0/vermell_c",
+          "trafic_light_0/red_c"
+        ]
+      },
+      "semafor_0_vermell_v": {
+        "ports": [
+          "semafor_0/vermell_v",
+          "trafic_light_0/red_v"
+        ]
+      },
+      "trafic_light_0_an": {
+        "ports": [
+          "trafic_light_0/an",
+          "an"
+        ]
+      },
+      "trafic_light_0_cat": {
+        "ports": [
+          "trafic_light_0/cat",
+          "cat"
+        ]
+      }
+    }
+  }
+}

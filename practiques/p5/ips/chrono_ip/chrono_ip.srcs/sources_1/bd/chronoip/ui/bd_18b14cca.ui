@@ -1,0 +1,57 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.642105",
+   "Default View_TopLeft":"-221,56",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 450 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace port port-id_mssc -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace port port-id_stst -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_btnr -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace port port-id_lapbtn -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace portBus an -pg 1 -lvl 10 -x 2000 -y 230 -defaultsOSRD
+preplace portBus cat -pg 1 -lvl 10 -x 2000 -y 200 -defaultsOSRD
+preplace inst clk_divider_0 -pg 1 -lvl 1 -x 100 -y 440 -defaultsOSRD
+preplace inst div_temp_1_0 -pg 1 -lvl 2 -x 290 -y 540 -defaultsOSRD
+preplace inst div_temps2_0 -pg 1 -lvl 3 -x 510 -y 600 -defaultsOSRD
+preplace inst div_temp_3_0 -pg 1 -lvl 4 -x 710 -y 670 -defaultsOSRD
+preplace inst div_temp_4_0 -pg 1 -lvl 5 -x 920 -y 690 -defaultsOSRD
+preplace inst div_temp_5_0 -pg 1 -lvl 6 -x 1130 -y 440 -defaultsOSRD
+preplace inst div_temp_6_0 -pg 1 -lvl 7 -x 1350 -y 460 -defaultsOSRD
+preplace inst seg7_coder_0 -pg 1 -lvl 9 -x 1880 -y 220 -defaultsOSRD
+preplace inst startstop_0 -pg 1 -lvl 7 -x 1350 -y 200 -defaultsOSRD
+preplace inst lap_0 -pg 1 -lvl 7 -x 1350 -y 70 -defaultsOSRD
+preplace inst visual_0 -pg 1 -lvl 8 -x 1630 -y 450 -defaultsOSRD
+preplace netloc clk_1 1 0 9 20 320 NJ 320 NJ 320 NJ 320 NJ 320 NJ 320 1250 320 1500 240 NJ
+preplace netloc clk_divider_0_clk_div 1 1 8 180 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 N
+preplace netloc div_temp_1_0_compt 1 2 6 410J 520 NJ 520 NJ 520 NJ 520 1250J 390 1460
+preplace netloc div_temp_1_0_thick 1 2 1 390 550n
+preplace netloc div_temp_3_0_compt 1 4 4 820J 530 NJ 530 NJ 530 1460
+preplace netloc div_temp_3_0_thick 1 4 1 N 680
+preplace netloc div_temp_4_0_compt 1 5 3 1030J 580 NJ 580 1500
+preplace netloc div_temp_4_0_thick 1 5 1 1020 430n
+preplace netloc div_temp_5_0_compt 1 6 2 1240 540 NJ
+preplace netloc div_temp_5_0_thick 1 6 1 N 450
+preplace netloc div_temp_6_0_compt 1 7 1 1450 450n
+preplace netloc div_temps2_0_compt 1 3 5 NJ 590 NJ 590 NJ 590 NJ 590 1480
+preplace netloc div_temps2_0_thick 1 3 1 610 610n
+preplace netloc mssc_1 1 0 8 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 1470J
+preplace netloc reset_1 1 0 9 20 510 190 470 400 670 610 740 810 510 1030 510 1230 330 1510 260 NJ
+preplace netloc seg7_coder_0_an 1 9 1 NJ 230
+preplace netloc seg7_coder_0_cat 1 9 1 1980J 200n
+preplace netloc visual_0_disp0 1 8 1 1750 160n
+preplace netloc visual_0_disp1 1 8 1 1760 180n
+preplace netloc visual_0_disp2 1 8 1 1770 200n
+preplace netloc visual_0_disp3 1 8 1 1780 220n
+preplace netloc stst_1 1 0 7 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc startstop_0_crono_on 1 7 1 1480 200n
+preplace netloc btnr_1 1 0 8 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ
+preplace netloc lapbtn_1 1 0 7 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc lap_0_lap_on 1 7 1 1490 70n
+levelinfo -pg 1 0 100 290 510 710 920 1130 1350 1630 1880 2000
+pagesize -pg 1 -db -bbox -sgen -90 0 2100 760
+"
+}
+0

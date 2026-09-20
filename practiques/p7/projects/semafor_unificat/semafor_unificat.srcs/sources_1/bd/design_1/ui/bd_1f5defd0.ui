@@ -1,0 +1,36 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-153,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port port-id_p -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace portBus cat -pg 1 -lvl 4 -x 790 -y 230 -defaultsOSRD
+preplace portBus an -pg 1 -lvl 4 -x 790 -y 260 -defaultsOSRD
+preplace inst clk_div_0 -pg 1 -lvl 1 -x 120 -y 210 -defaultsOSRD
+preplace inst clk_div_1s_0 -pg 1 -lvl 2 -x 370 -y 70 -defaultsOSRD
+preplace inst semafor_0 -pg 1 -lvl 2 -x 370 -y 290 -defaultsOSRD
+preplace inst trafic_light_0 -pg 1 -lvl 3 -x 660 -y 250 -defaultsOSRD
+preplace netloc Net 1 0 3 20 140 220 140 480J
+preplace netloc clk_div_0_clk_div 1 1 2 240 160 N
+preplace netloc clk_div_1s_0_clk_div 1 1 2 250 150 500
+preplace netloc p_1 1 0 2 NJ 280 NJ
+preplace netloc reset_1 1 0 3 20 290 230 420 540J
+preplace netloc semafor_0_ambar_c 1 2 1 510 280n
+preplace netloc semafor_0_conta 1 2 1 490 140n
+preplace netloc semafor_0_enable_out 1 2 1 N 220
+preplace netloc semafor_0_enable_out_b 1 2 1 N 240
+preplace netloc semafor_0_verd_c 1 2 1 520 300n
+preplace netloc semafor_0_verd_v 1 2 1 N 340
+preplace netloc semafor_0_vermell_c 1 2 1 500 260n
+preplace netloc semafor_0_vermell_v 1 2 1 530 320n
+preplace netloc trafic_light_0_an 1 3 1 NJ 260
+preplace netloc trafic_light_0_cat 1 3 1 760J 230n
+levelinfo -pg 1 0 120 370 660 790
+pagesize -pg 1 -db -bbox -sgen -80 0 890 430
+"
+}
+0
